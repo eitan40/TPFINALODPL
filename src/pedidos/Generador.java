@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Stack;
 
-public abstract class Generador implements Iterator
+public abstract class Generador implements Iterator<Recorrido>
 {
 	// Instancia
 	private Instancia instancia;
@@ -12,7 +12,7 @@ public abstract class Generador implements Iterator
 	// Cantidad de ciudades
 	private int n;
 
-	// Pila de pedidos
+	// Pila de pedidos 
 	private Stack<Pedido> p;
 
 	// El constructor toma la cantidad de pedidos
