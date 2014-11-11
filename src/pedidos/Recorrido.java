@@ -2,7 +2,7 @@ package pedidos;
 
 import java.util.ArrayList;
 
-//Representa un recorrido por algunas o todas las ciudades
+//Representa un recorrido por algunas o todos los lugares
 public class Recorrido
 {
 	// Instancia asociada

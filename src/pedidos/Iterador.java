@@ -18,7 +18,7 @@ public abstract class Iterador implements Iterator<Recorrido>
 	// Pila de pedidos
 	private Stack<Pedido> p;
 
-	// El constructor toma la cantidad de ciudades
+	// El constructor toma la cantidad de pedidos
 	public Iterador(Instancia inst) 
 	{
 		instancia = inst;
@@ -40,13 +40,13 @@ public abstract class Iterador implements Iterator<Recorrido>
 	// Proceso recursivo
 	private void completar(Recorrido recorrido, LinkedList<Recorrido> ret) 
 	{
-		// Caso base: El recorrido contiene todas las ciudades
+		// Caso base: El recorrido contiene todos los pedidos
 		if (recorrido.size() == n) {
 			ret.add(recorrido.clonar());
 			return;
 		}
 
-		// Caso recursivo: Agrego todas las posibles ciudades al recorrido
+		// Caso recursivo: Agrego todas los posibles pedidos al recorrido
 		for (int i = 0; i < n; ++i) 
 		{
 			if (recorrido.contiene(i) == false) 
