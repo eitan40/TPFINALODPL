@@ -22,7 +22,22 @@ public class Coordenada implements Serializable
 		this.latitud = longitud;
 	}
 	
-	
+	// Calcula la distancia entre dos coordenadas
+	public static double calcularDistancia(Coordenada c1,Coordenada c2) {
+
+		double a,b;
+		if(c1.latitud > c2.latitud)
+			a = c1.latitud - c2.latitud;
+		else
+			a = c2.latitud - c1.latitud;
+		
+		if(c1.longitud > c2.longitud)
+			b = c1.longitud - c2.longitud;
+		else
+			b = c2.longitud - c1.longitud;
+
+		return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+	}
 
 
 	@Override

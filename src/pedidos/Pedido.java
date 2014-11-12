@@ -204,7 +204,10 @@ public class Pedido implements Serializable
 	}
 
 	
-	
+	public Coordenada getCoordenada()
+	{
+		return this.coordenada;
+	}
 	
 
 	@Override
